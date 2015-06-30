@@ -42,9 +42,7 @@ Web Starter Kit is an opinionated build automation for front-end web development
     * Structure
     * Style Guide
 * Views
-    * Structure
     * Style Guide
-    * Environments
 
 ---
 
@@ -216,19 +214,11 @@ Your Sass should adhere to most reasonable, yet opinionated, style guide. If you
 This task will perform a series of sub-tasks to generate final HTML files.
 
 * Select Jade files from `./source/views/site`
-* Compile Jade to HTML
 * Check for HTML errors
+* Copy files to `./build/`
 
 Run: `gulp views`
-
-### Structure
-
-This project follows an opinionated directory structure. To learn more about Jade go to [http://jade-lang.com/reference/](http://jade-lang.com/reference/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
 
 ### Style Guide
 
 Your HTML should adhere to most reasonable, yet opinionated, style guide. If you choose to ignore it, you can override settings in `./gulp_tasks/_html-lint.json`.
-
-### Environments
-
-Every Jade file has access to global `env` variable. You can use it to conditionally load unminified/minified assets. See `./source/views/includes/head.jade` as an example.
