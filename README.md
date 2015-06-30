@@ -2,7 +2,7 @@
 
 ![Alt text](http://www.kolszewski.com/images/vendors.png)
 
-Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/), and [Jade](http://jade-lang.com/).
+Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [Sass](http://sass-lang.com/).
 
 **Key features**
 
@@ -183,7 +183,7 @@ This task will perform a series of sub-tasks to generate final CSS files.
 
 * Select all files from `./source/styles`
 * Check for Sass style guide errors
-* Select root files only from `./source/styles`
+* Select only root files from `./source/styles`
 * Compile Sass to CSS
 * Add vendor prefixes
 * Order CSS declarations
@@ -191,7 +191,7 @@ This task will perform a series of sub-tasks to generate final CSS files.
 * Save unminified CSS file
 * Combine media queries
 * Minify CSS
-* Saved minified CSS file
+* Save minified CSS file
 
 *Note: Each file on the root of `./source/styles` will be compiled to its own file in `./build/styles`.*
 
@@ -213,7 +213,7 @@ Your Sass should adhere to most reasonable, yet opinionated, style guide. If you
 
 This task will perform a series of sub-tasks to generate final HTML files.
 
-* Select Jade files from `./source/views/site`
+* Select HTML files from `./source/views/site`
 * Check for HTML errors
 * Copy files to `./build/`
 
